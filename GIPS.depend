@@ -1,0 +1,432 @@
+# depslib dependency file v1.0
+1550764228 source:/home/ccsg/桌面/GIPS/GIPS/main.cpp
+	<iostream>
+	"src/rtklib.h"
+	"gips.h"
+
+1550761675 /home/ccsg/桌面/GIPS/GIPS/src/rtklib.h
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<string.h>
+	<math.h>
+	<time.h>
+	<ctype.h>
+	<winsock2.h>
+	<windows.h>
+	<pthread.h>
+
+1550761847 source:/home/ccsg/桌面/GIPS/GIPS/src/convgpx.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/convkml.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/convrnx.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/datum.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/download.c
+	<errno.h>
+	<sys/stat.h>
+	<sys/types.h>
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/ephemeris.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/geoid.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/gis.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/ionex.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/lambda.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/options.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/pntpos.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/postpos.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/ppp.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/ppp_ar.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/ppp_corr.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/preceph.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/qzslex.c
+	"rtklib.h"
+
+1550761081 source:/home/ccsg/桌面/GIPS/GIPS/src/rcv/binex.c
+	"../rtklib.h"
+
+1550761099 source:/home/ccsg/桌面/GIPS/GIPS/src/rcv/crescent.c
+	"../rtklib.h"
+
+1550761105 source:/home/ccsg/桌面/GIPS/GIPS/src/rcv/gw10.c
+	"../rtklib.h"
+
+1550761109 source:/home/ccsg/桌面/GIPS/GIPS/src/rcv/javad.c
+	"../rtklib.h"
+
+1550761113 source:/home/ccsg/桌面/GIPS/GIPS/src/rcv/novatel.c
+	"../rtklib.h"
+
+1550761118 source:/home/ccsg/桌面/GIPS/GIPS/src/rcv/nvs.c
+	"../rtklib.h"
+
+1550761121 source:/home/ccsg/桌面/GIPS/GIPS/src/rcv/rcvlex.c
+	"../rtklib.h"
+
+1550761126 source:/home/ccsg/桌面/GIPS/GIPS/src/rcv/rt17.c
+	"../rtklib.h"
+
+1550761131 source:/home/ccsg/桌面/GIPS/GIPS/src/rcv/septentrio.c
+	"../rtklib.h"
+	<math.h>
+	<stdint.h>
+
+1550761135 source:/home/ccsg/桌面/GIPS/GIPS/src/rcv/skytraq.c
+	"../rtklib.h"
+
+1550761140 source:/home/ccsg/桌面/GIPS/GIPS/src/rcv/ss2.c
+	"../rtklib.h"
+
+1550761145 source:/home/ccsg/桌面/GIPS/GIPS/src/rcv/tersus.c
+	"../rtklib.h"
+
+1550762835 source:/home/ccsg/桌面/GIPS/GIPS/src/message.c
+	"rtklib.h"
+
+1550761150 source:/home/ccsg/桌面/GIPS/GIPS/src/rcv/ublox.c
+	"../rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/rcvraw.c
+	"rtklib.h"
+	<stdint.h>
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/rinex.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/rtcm.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/rtcm2.c
+	"rtklib.h"
+
+1550762247 source:/home/ccsg/桌面/GIPS/GIPS/src/rtcm3.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/rtcm3e.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/rtkcmn.c
+	<stdarg.h>
+	<ctype.h>
+	<dirent.h>
+	<time.h>
+	<sys/time.h>
+	<sys/stat.h>
+	<sys/types.h>
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/rtkpos.c
+	<stdarg.h>
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/rtksvr.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/sbas.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/solution.c
+	<ctype.h>
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/stream.c
+	<ctype.h>
+	"rtklib.h"
+	<fcntl.h>
+	<unistd.h>
+	<sys/stat.h>
+	<sys/time.h>
+	<errno.h>
+	<termios.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netinet/tcp.h>
+	<arpa/inet.h>
+	<netdb.h>
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/streamsvr.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/tides.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/tle.c
+	"rtklib.h"
+
+1550762986 source:/home/ccsg/桌面/GIPS/GIPS/src/binex.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/桌面/GIPS/GIPS/src/cmr.c
+	"rtklib.h"
+
+1550762993 source:/home/ccsg/桌面/GIPS/GIPS/src/crescent.c
+	"rtklib.h"
+
+1550763004 source:/home/ccsg/桌面/GIPS/GIPS/src/gw10.c
+	"rtklib.h"
+
+1550763017 source:/home/ccsg/桌面/GIPS/GIPS/src/javad.c
+	"rtklib.h"
+
+1550763033 source:/home/ccsg/桌面/GIPS/GIPS/src/novatel.c
+	"rtklib.h"
+
+1550763038 source:/home/ccsg/桌面/GIPS/GIPS/src/nvs.c
+	"rtklib.h"
+
+1550763047 source:/home/ccsg/桌面/GIPS/GIPS/src/rcvlex.c
+	"rtklib.h"
+
+1550763051 source:/home/ccsg/桌面/GIPS/GIPS/src/rt17.c
+	"rtklib.h"
+
+1550763060 source:/home/ccsg/桌面/GIPS/GIPS/src/septentrio.c
+	"rtklib.h"
+	<math.h>
+	<stdint.h>
+
+1550763067 source:/home/ccsg/桌面/GIPS/GIPS/src/skytraq.c
+	"rtklib.h"
+
+1550763073 source:/home/ccsg/桌面/GIPS/GIPS/src/ss2.c
+	"rtklib.h"
+
+1550763079 source:/home/ccsg/桌面/GIPS/GIPS/src/tersus.c
+	"rtklib.h"
+
+1550763084 source:/home/ccsg/桌面/GIPS/GIPS/src/ublox.c
+	"rtklib.h"
+
+1550764742 /home/ccsg/桌面/GIPS/GIPS/gips.h
+	<iostream>
+	"src/rtklib.h"
+	<sstream>
+
+1551378862 source:/home/ccsg/CWorkPlace/GIPS/GIPS/main.cpp
+	<iostream>
+	<stdio.h>
+	<hiredis/hiredis.h>
+	"src/rtklib.h"
+	"gips.h"
+	<iomanip>
+	<sys/time.h>
+
+1550761675 /home/ccsg/CWorkPlace/GIPS/GIPS/src/rtklib.h
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<string.h>
+	<math.h>
+	<time.h>
+	<ctype.h>
+	<winsock2.h>
+	<windows.h>
+	<pthread.h>
+
+1550764742 /home/ccsg/CWorkPlace/GIPS/GIPS/gips.h
+	<iostream>
+	"src/rtklib.h"
+	<sstream>
+
+1550762986 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/binex.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/cmr.c
+	"rtklib.h"
+
+1550761847 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/convgpx.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/convkml.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/convrnx.c
+	"rtklib.h"
+
+1550762993 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/crescent.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/datum.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/download.c
+	<errno.h>
+	<sys/stat.h>
+	<sys/types.h>
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/ephemeris.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/geoid.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/gis.c
+	"rtklib.h"
+
+1550763004 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/gw10.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/ionex.c
+	"rtklib.h"
+
+1550763017 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/javad.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/lambda.c
+	"rtklib.h"
+
+1550762835 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/message.c
+	"rtklib.h"
+
+1550763033 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/novatel.c
+	"rtklib.h"
+
+1550763038 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/nvs.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/options.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/pntpos.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/postpos.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/ppp.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/ppp_ar.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/ppp_corr.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/preceph.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/qzslex.c
+	"rtklib.h"
+
+1550763047 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/rcvlex.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/rcvraw.c
+	"rtklib.h"
+	<stdint.h>
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/rinex.c
+	"rtklib.h"
+
+1550763051 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/rt17.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/rtcm.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/rtcm2.c
+	"rtklib.h"
+
+1550762247 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/rtcm3.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/rtcm3e.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/rtkcmn.c
+	<stdarg.h>
+	<ctype.h>
+	<dirent.h>
+	<time.h>
+	<sys/time.h>
+	<sys/stat.h>
+	<sys/types.h>
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/rtkpos.c
+	<stdarg.h>
+	"rtklib.h"
+
+1550891362 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/rtksvr.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/sbas.c
+	"rtklib.h"
+
+1550763060 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/septentrio.c
+	"rtklib.h"
+	<math.h>
+	<stdint.h>
+
+1550763067 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/skytraq.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/solution.c
+	<ctype.h>
+	"rtklib.h"
+
+1550763073 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/ss2.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/stream.c
+	<ctype.h>
+	"rtklib.h"
+	<fcntl.h>
+	<unistd.h>
+	<sys/stat.h>
+	<sys/time.h>
+	<errno.h>
+	<termios.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netinet/tcp.h>
+	<arpa/inet.h>
+	<netdb.h>
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/streamsvr.c
+	"rtklib.h"
+
+1550763079 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/tersus.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/tides.c
+	"rtklib.h"
+
+1539277370 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/tle.c
+	"rtklib.h"
+
+1550763084 source:/home/ccsg/CWorkPlace/GIPS/GIPS/src/ublox.c
+	"rtklib.h"
+
