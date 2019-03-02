@@ -63,19 +63,19 @@ int main()
  */
     redisContext* c = redisConnect("121.28.103.199", 5622);
     if (c->err) {    /* Error flags, 0 when there is no error */
-        printf("连接Redis失败: %s\n", c->errstr);
+        printf("ERRO NOT Connect Redis: %s\n", c->errstr);
         exit(1);
     }
     else{
-        printf("连接Redis成功！\n");
+        printf("Connect Redis！\n");
     }
 
     redisReply* reply = (redisReply*)redisCommand(c, "AUTH %s", "CASMadmin2019");
     if (reply->type == REDIS_REPLY_ERROR) {
-        printf("Redis认证失败！\n");
+        printf("ERRO NOT AUTH Redis\n");
     }
     else{
-        printf("Redis认证成功！\n");
+        printf("AUTH Redis！\n");
     }
     freeReplyObject(reply);
 
@@ -92,9 +92,10 @@ int main()
 
             pushDataRedis(rtksvr,c,"STATION01");
         }
+        //cout<<"1111"<<endl;
 
         //*p = NULL;
-		//cout<< rtksvr.rtk.sol.rr[1] <<endl;
+		cout<< rtksvr.rtk.sol.rr[1] <<endl;
 		//cout<< rtksvr.rtk.sol.rr[2] <<endl;
 
 		//redisReply* loadDate = (redisReply*)redisCommand(c, "set x %f",rtksvr.rtk.sol.rr[0]);

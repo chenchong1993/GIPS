@@ -662,7 +662,8 @@ static void *rtksvrthread(void *arg)
     return 0;
 }
 /* initialize rtk server -------------------------------------------------------
-* initialize rtk server
+* 初始化rtk服务器
+*initialize rtk server
 * args   : rtksvr_t *svr    IO rtk server
 * return : status (0:error,1:ok)
 *-----------------------------------------------------------------------------*/
@@ -758,27 +759,27 @@ extern void rtksvrlock  (rtksvr_t *svr) {lock  (&svr->lock);}
 extern void rtksvrunlock(rtksvr_t *svr) {unlock(&svr->lock);}
 
 /* start rtk server ------------------------------------------------------------
-* start rtk server thread
-* args   : rtksvr_t *svr    IO rtk server
-*          int     cycle    I  server cycle (ms)
-*          int     buffsize I  input buffer size (bytes)
-*          int     *strs    I  stream types (STR_???)
-*                              types[0]=input stream rover
-*                              types[1]=input stream base station
-*                              types[2]=input stream correction
-*                              types[3]=output stream solution 1
+* start rtk server thread                                            开启rtk服务线程
+* args   : rtksvr_t *svr    IO rtk server                            rtksvr_t结构体 包含关于数据流的信息，既有输入也有输出
+*          int     cycle    I  server cycle (ms)                     服务周期
+*          int     buffsize I  input buffer size (bytes)             输入缓冲区大小
+*          int     *strs    I  stream types (STR_???)                数据流类型
+*                              types[0]=input stream rover           接收机（rov rover）的输入流
+*                              types[1]=input stream base station    基准站的输入流
+*                              types[2]=input stream correction      改正数的输入流
+*                              types[3]=output stream solution 1     结果的输出流
 *                              types[4]=output stream solution 2
-*                              types[5]=log stream rover
+*                              types[5]=log stream rover             接收机流日志
 *                              types[6]=log stream base station
 *                              types[7]=log stream correction
-*          char    *paths   I  input stream paths
-*          int     *format  I  input stream formats (STRFMT_???)
+*          char    *paths   I  input stream paths                     输入流路径
+*          int     *format  I  input stream formats (STRFMT_???)      输入流格式
 *                              format[0]=input stream rover
 *                              format[1]=input stream base station
 *                              format[2]=input stream correction
-*          int     navsel   I  navigation message select
+*          int     navsel   I  navigation message select              选择导航信息
 *                              (0:rover,1:base,2:ephem,3:all)
-*          char    **cmds   I  input stream start commands
+*          char    **cmds   I  input stream start commands             输入流开始的命令
 *                              cmds[0]=input stream rover (NULL: no command)
 *                              cmds[1]=input stream base (NULL: no command)
 *                              cmds[2]=input stream corr (NULL: no command)
@@ -786,7 +787,7 @@ extern void rtksvrunlock(rtksvr_t *svr) {unlock(&svr->lock);}
 *                              cmds[0]=input stream rover (NULL: no command)
 *                              cmds[1]=input stream base (NULL: no command)
 *                              cmds[2]=input stream corr (NULL: no command)
-*          char    **rcvopts I receiver options
+*          char    **rcvopts I receiver options                         接收机设备选项
 *                              rcvopt[0]=receiver option rover
 *                              rcvopt[1]=receiver option base
 *                              rcvopt[2]=receiver option corr

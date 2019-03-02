@@ -960,9 +960,9 @@ typedef struct {        /* solution status buffer type */
     solstat_t *data;    /* solution status data */
 } solstatbuf_t;
 
-typedef struct {        /* RTCM control struct type */
-    int staid;          /* station id */
-    int stah;           /* station health */
+typedef struct {        /* RTCM结构体定义 RTCM control struct type */
+    int staid;          /* 站id station id */
+    int stah;           /* 站健康状况 station health */
     int seqno;          /* sequence number for rtcm 2 or iods msm */
     int outtype;        /* output message type */
     gtime_t time;       /* message time */
@@ -1305,46 +1305,46 @@ typedef struct {        /* stream server type */
     lock_t lock;        /* lock flag */
 } strsvr_t;
 
-typedef struct {        /* RTK server type */
-    int state;          /* server state (0:stop,1:running) */
-    int cycle;          /* processing cycle (ms) */
-    int nmeacycle;      /* NMEA request cycle (ms) (0:no req) */
-    int nmeareq;        /* NMEA request (0:no,1:nmeapos,2:single sol) */
-    double nmeapos[3];  /* NMEA request position (ecef) (m) */
-    int buffsize;       /* input buffer size (bytes) */
-    int format[3];      /* input format {rov,base,corr} */
-    solopt_t solopt[2]; /* output solution options {sol1,sol2} */
-    int navsel;         /* ephemeris select (0:all,1:rover,2:base,3:corr) */
-    int nsbs;           /* number of sbas message */
-    int nsol;           /* number of solution buffer */
+typedef struct {        /* RTK服务器类型R  TK server type */
+    int state;          /* 服务器状态（0：停止，1：运行）server state (0:stop,1:running) */
+    int cycle;          /* 处理周期（ms）processing cycle (ms) */
+    int nmeacycle;      /* NMEA请求周期（ms）（0：无需要）NMEA request cycle (ms) (0:no req) */
+    int nmeareq;        /* NMEA请求 NMEA request (0:no,1:nmeapos,2:single sol) NMEA请求*/
+    double nmeapos[3];  /* NMEA请求位置 NMEA request position (ecef) (m) */
+    int buffsize;       /* 输入缓冲区大小（字节） input buffer size (bytes) */
+    int format[3];      /* 输入格式 input format {rov,base,corr} */
+    solopt_t solopt[2]; /* 输出解选项 output solution options {sol1,sol2} */
+    int navsel;         /* 星历选项 ephemeris select (0:all,1:rover,2:base,3:corr) */
+    int nsbs;           /* sbas卫星消息的数量 number of sbas message */
+    int nsol;           /* 解缓冲区的数量 number of solution buffer */
     rtk_t rtk;          /* RTK control/result struct */
-    int nb [3];         /* bytes in input buffers {rov,base} */
-    int nsb[2];         /* bytes in soulution buffers */
+    int nb [3];         /* 输入缓冲区的字节数bytes in input buffers {rov,base} */
+    int nsb[2];         /* 结果缓冲区的字节数bytes in soulution buffers */
     int npb[3];         /* bytes in input peek buffers */
-    unsigned char *buff[3]; /* input buffers {rov,base,corr} */
-    unsigned char *sbuf[2]; /* output buffers {sol1,sol2} */
+    unsigned char *buff[3]; /* 输入缓冲区input buffers {rov,base,corr} */
+    unsigned char *sbuf[2]; /* 输出缓冲区output buffers {sol1,sol2} */
     unsigned char *pbuf[3]; /* peek buffers {rov,base,corr} */
-    sol_t solbuf[MAXSOLBUF]; /* solution buffer */
-    unsigned int nmsg[3][10]; /* input message counts */
-    raw_t  raw [3];     /* receiver raw control {rov,base,corr} */
-    rtcm_t rtcm[3];     /* RTCM control {rov,base,corr} */
-    gtime_t ftime[3];   /* download time {rov,base,corr} */
-    char files[3][MAXSTRPATH]; /* download paths {rov,base,corr} */
-    obs_t obs[3][MAXOBSBUF]; /* observation data {rov,base,corr} */
-    nav_t nav;          /* navigation data */
-    sbsmsg_t sbsmsg[MAXSBSMSG]; /* SBAS message buffer */
-    stream_t stream[8]; /* streams {rov,base,corr,sol1,sol2,logr,logb,logc} */
-    stream_t *moni;     /* monitor stream */
-    unsigned int tick;  /* start tick */
-    thread_t thread;    /* server thread */
-    int cputime;        /* CPU time (ms) for a processing cycle */
-    int prcout;         /* missing observation data count */
+    sol_t solbuf[MAXSOLBUF]; /* 结果缓冲区solution buffer */
+    unsigned int nmsg[3][10]; /* 输入消息计数input message counts */
+    raw_t  raw [3];     /* 接收机原始观测值receiver raw control {rov,base,corr} */
+    rtcm_t rtcm[3];     /* RTCM数据流RTCM control {rov,base,corr} */
+    gtime_t ftime[3];   /* 下载时间download time {rov,base,corr} */
+    char files[3][MAXSTRPATH]; /* 下载路径download paths {rov,base,corr} */
+    obs_t obs[3][MAXOBSBUF]; /* 观测数据observation data {rov,base,corr} */
+    nav_t nav;          /* 导航数据navigation data */
+    sbsmsg_t sbsmsg[MAXSBSMSG]; /* SBAS卫星消息缓冲区 SBAS message buffer */
+    stream_t stream[8]; /* 流 streams {rov,base,corr,sol1,sol2,logr,logb,logc} */
+    stream_t *moni;     /* 监控流 monitor stream */
+    unsigned int tick;  /* 开始时刻 start tick */
+    thread_t thread;    /* 服务线程 server thread */
+    int cputime;        /* 一个处理周期的CPU时间 CPU time (ms) for a processing cycle */
+    int prcout;         /* 丢失的观测数据的计数 missing observation data count */
     int nave;           /* number of averaging base pos */
     double rb_ave[3];   /* averaging base pos */
-    char cmds_periodic[3][MAXRCVCMD]; /* periodic commands */
-    char cmd_reset[MAXRCVCMD]; /* reset command */
-    double bl_reset;    /* baseline length to reset (km) */
-    lock_t lock;        /* lock flag */
+    char cmds_periodic[3][MAXRCVCMD]; /*周期的命令 periodic commands */
+    char cmd_reset[MAXRCVCMD]; /* 重置命令reset command */
+    double bl_reset;    /* 基线长度重置baseline length to reset (km) */
+    lock_t lock;        /* 锁定标志lock flag */
 } rtksvr_t;
 
 typedef struct {        /* gis data point type */
@@ -1902,6 +1902,10 @@ EXPORT int lexeph2pos(gtime_t time, int sat, const nav_t *nav, double *rs,
                       double *dts, double *var);
 EXPORT int lexioncorr(gtime_t time, const nav_t *nav, const double *pos,
                       const double *azel, double *delay, double *var);
+
+/*GIPS初始化定义函数*/
+EXPORT int rtksoloptinit(solopt_t *SolOpt);
+EXPORT int rtkprcoptinit(prcopt_t *PrcOpt,rtksvr_t *rtksvr);
 
 /* application defined functions ---------------------------------------------*/
 extern int showmsg(char *format,...);
